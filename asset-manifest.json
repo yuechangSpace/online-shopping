@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/online-shopping/static/css/main.21d3e496.chunk.css",
+    "main.js": "/online-shopping/static/js/main.3e53f8b6.chunk.js",
+    "main.js.map": "/online-shopping/static/js/main.3e53f8b6.chunk.js.map",
+    "runtime-main.js": "/online-shopping/static/js/runtime-main.e0c0aab1.js",
+    "runtime-main.js.map": "/online-shopping/static/js/runtime-main.e0c0aab1.js.map",
+    "static/js/2.2b0abcaf.chunk.js": "/online-shopping/static/js/2.2b0abcaf.chunk.js",
+    "static/js/2.2b0abcaf.chunk.js.map": "/online-shopping/static/js/2.2b0abcaf.chunk.js.map",
+    "index.html": "/online-shopping/index.html",
+    "precache-manifest.e6a8e9563a66aead7a1e6c991b8ed650.js": "/online-shopping/precache-manifest.e6a8e9563a66aead7a1e6c991b8ed650.js",
+    "service-worker.js": "/online-shopping/service-worker.js",
+    "static/css/main.21d3e496.chunk.css.map": "/online-shopping/static/css/main.21d3e496.chunk.css.map",
+    "static/js/2.2b0abcaf.chunk.js.LICENSE.txt": "/online-shopping/static/js/2.2b0abcaf.chunk.js.LICENSE.txt",
+    "static/media/crown.ed28accb.svg": "/online-shopping/static/media/crown.ed28accb.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0c0aab1.js",
+    "static/js/2.2b0abcaf.chunk.js",
+    "static/css/main.21d3e496.chunk.css",
+    "static/js/main.3e53f8b6.chunk.js"
+  ]
+}

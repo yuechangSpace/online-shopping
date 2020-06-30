@@ -2,7 +2,7 @@ import React from 'react';
 import FormInput from '../form-input/form-input.component'
 import './sign-in.styles.scss'
 import CustomButton from '../custom-button/custom-button.component';
-import { signInWithGoogle } from '../../firebase/firebase.utils.js';
+import { auth, signInWithGoogle } from '../../firebase/firebase.utils.js';
 
 class Signin extends React.Component {
 	constructor(props){
@@ -17,9 +17,11 @@ class Signin extends React.Component {
 		this.setState({ email:'', password:'' })
 	}
 	handleChange = (event) => {
-		console.log(event.target.value)
 		const { value, name } = event.target;
 		this.setState({[name]:value});
+		// auth.signInWithEmailAndPassword(this.state.email, this.state.password).catch(function(error) {
+		//   // Handle Errors here.
+		// });
 	}
 	render(){
 		return (
@@ -45,7 +47,7 @@ class Signin extends React.Component {
 					required/>
 					<div className="group-buttons">
 						<CustomButton  onSubmit={this.handleSubmit}> Sign In</CustomButton>
-						<CustomButton  onClick={signInWithGoogle} GoogleSignIn> Sign In With Google </CustomButton>
+						<CustomButton  onClick={signInWithGoogle} GoogleSignIn type='button'> Sign In With Google </CustomButton>
 					</div>
 				</form>
 			</div>

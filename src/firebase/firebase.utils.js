@@ -22,3 +22,26 @@ export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
 export default firebase;
 
+export const getUserProfile = async ( userObj, additionalData )=>{
+	//get the existing user profile OR create one
+	if (!userObj) return;
+	const userRef = store.doc(`users/${userObj.uid}`)
+	const snapShot = await userRef.get()
+	
+	console.log(additionalData)
+	if (!snapShot.exists){
+		const { displayName, uid } = userObj;
+		const date = new Date();
+		
+		await userRef.set({
+			uid,
+			displayName,
+			date,
+			...additionalData
+		})
+		.then(()=>console.log("Added a new account!"))
+		.catch(()=>console.error("Error writing an account!"))
+	}
+	return userRef;
+}
+

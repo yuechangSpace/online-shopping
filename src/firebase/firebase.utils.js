@@ -27,14 +27,12 @@ export const getUserProfile = async ( userObj, additionalData )=>{
 	if (!userObj) return;
 	const userRef = store.doc(`users/${userObj.uid}`)
 	const snapShot = await userRef.get()
-	
-	console.log(additionalData)
 	if (!snapShot.exists){
-		const { displayName, uid } = userObj;
+		const { displayName, email } = userObj;
 		const date = new Date();
 		
 		await userRef.set({
-			uid,
+			email,
 			displayName,
 			date,
 			...additionalData

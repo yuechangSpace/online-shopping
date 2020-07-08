@@ -11,13 +11,13 @@ class Signup extends React.Component {
 			email:'',
 			password:'',
 			displayName:'',
-			confirmedPassword:''
+			confirmPassword:''
 		}
 	}
 	handleSubmit = async (event) => {
-		const { email, password, displayName, confirmedPassword } = this.state;
+		const { email, password, displayName, confirmPassword } = this.state;
 		event.preventDefault();
-		if (password !== confirmedPassword) 
+		if (password !== confirmPassword) 
 			alert("Passwords don't match")
 
 	    try {
@@ -26,7 +26,7 @@ class Signup extends React.Component {
 	        password
 	      );
 
-	      await getUserProfile(user, { displayName });
+	      await getUserProfile(user, { displayName, password });
 
 	      this.setState({
 	        displayName: '',
@@ -40,8 +40,9 @@ class Signup extends React.Component {
 	  }
 	
 	handleChange = (event) => {
+		//use the name of the inputs to change the app's state
 		const { value, name } = event.target;
-		this.setState({[name]:value});
+		this.setState({ [name]:value });
 	}
 	render(){
 		return (
@@ -51,7 +52,7 @@ class Signup extends React.Component {
 
 				<form>
 					<FormInput 
-					name='name' 
+					name='displayName' 
 					type='name' 
 					value={this.state.displayName} 
 					onChange={this.handleChange} 
@@ -75,11 +76,11 @@ class Signup extends React.Component {
 					required/>
 
 					<FormInput 
-					name='confirmedPassword' 
+					name='confirmPassword' 
 					type='password' 
-					value={this.state.confirmedPassword} 
+					value={this.state.confirmPassword} 
 					onChange={this.handleChange} 
-					label='ConfirmedPassword'
+					label='ConfirmPassword'
 					required/>
 
 					<div className="group-buttons">

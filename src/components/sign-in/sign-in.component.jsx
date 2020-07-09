@@ -19,9 +19,11 @@ class Signin extends React.Component {
 	handleChange = (event) => {
 		const { value, name } = event.target;
 		this.setState({[name]:value});
-		// auth.signInWithEmailAndPassword(this.state.email, this.state.password).catch(function(error) {
-		//   // Handle Errors here.
-		// });
+		auth.signInWithEmailAndPassword(this.state.email, this.state.password)
+		.then(user=>console.log('email user',user))
+		.catch(function(error) {
+		  // Handle Errors here.
+		});
 	}
 	render(){
 		return (

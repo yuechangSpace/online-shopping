@@ -10,6 +10,7 @@ import { createStructuredSelector } from 'reselect';
 import './App.css';
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
+import CheckoutPage from './pages/checkout/checkout.component';
 import Header from './components/header/header.component';
 import SignPage from './pages/sign-in-sign-up/sign-in-sign-up.component';
 
@@ -47,9 +48,10 @@ class App extends React.Component {
             <div>
                 <Header />
                 <Switch>
-                    <Route  exact path='/online-shopping' component = { HomePage } />
+                    <Route exact path='/online-shopping' component = { HomePage } />
                     <Route exact path='/shop' component = { ShopPage } />
                     <Route exact path='/signin' render = { ()=> this.props.currentUser?<Redirect to='/online-shopping'/>:<SignPage /> } />
+                    <Route exact path='/checkout' component={ CheckoutPage } />
                 </Switch>
             </div>
           );

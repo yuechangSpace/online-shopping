@@ -1,5 +1,7 @@
 const CartActionTypes = {
 	toggleCartDropdown:'toggleCartDropdown',
-	addItem:'addItem'
+	addItem:'addItem',
+	removeItem:'removeItem',
+	decreaseQuantity:'decreaseQuantity'
 }
 export default CartActionTypes;

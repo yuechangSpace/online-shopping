@@ -17,7 +17,6 @@ import SignPage from './pages/sign-in-sign-up/sign-in-sign-up.component';
 class App extends React.Component {
     unsubscribe = null;
     componentDidMount(){
-        console.log("props",this.props)
         const { setCurrentUser } = this.props;
         // console.log("prps: ",this.props)
         //returns a unsubscribe function

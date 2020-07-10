@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/online-shopping/static/css/main.14fb0229.chunk.css",
-    "main.js": "/online-shopping/static/js/main.c6ee7c60.chunk.js",
-    "main.js.map": "/online-shopping/static/js/main.c6ee7c60.chunk.js.map",
+    "main.css": "/online-shopping/static/css/main.c3307726.chunk.css",
+    "main.js": "/online-shopping/static/js/main.67ec68bf.chunk.js",
+    "main.js.map": "/online-shopping/static/js/main.67ec68bf.chunk.js.map",
     "runtime-main.js": "/online-shopping/static/js/runtime-main.e0c0aab1.js",
     "runtime-main.js.map": "/online-shopping/static/js/runtime-main.e0c0aab1.js.map",
-    "static/js/2.f2dd77dc.chunk.js": "/online-shopping/static/js/2.f2dd77dc.chunk.js",
-    "static/js/2.f2dd77dc.chunk.js.map": "/online-shopping/static/js/2.f2dd77dc.chunk.js.map",
+    "static/js/2.cb7fb4d6.chunk.js": "/online-shopping/static/js/2.cb7fb4d6.chunk.js",
+    "static/js/2.cb7fb4d6.chunk.js.map": "/online-shopping/static/js/2.cb7fb4d6.chunk.js.map",
     "index.html": "/online-shopping/index.html",
-    "precache-manifest.bf1cbd407943bbd6b027d1ad1882de5e.js": "/online-shopping/precache-manifest.bf1cbd407943bbd6b027d1ad1882de5e.js",
+    "precache-manifest.5a9f6901667dafd4baa24772010ac710.js": "/online-shopping/precache-manifest.5a9f6901667dafd4baa24772010ac710.js",
     "service-worker.js": "/online-shopping/service-worker.js",
-    "static/css/main.14fb0229.chunk.css.map": "/online-shopping/static/css/main.14fb0229.chunk.css.map",
-    "static/js/2.f2dd77dc.chunk.js.LICENSE.txt": "/online-shopping/static/js/2.f2dd77dc.chunk.js.LICENSE.txt",
-    "static/media/crown.ed28accb.svg": "/online-shopping/static/media/crown.ed28accb.svg"
+    "static/css/main.c3307726.chunk.css.map": "/online-shopping/static/css/main.c3307726.chunk.css.map",
+    "static/js/2.cb7fb4d6.chunk.js.LICENSE.txt": "/online-shopping/static/js/2.cb7fb4d6.chunk.js.LICENSE.txt",
+    "static/media/crown.ed28accb.svg": "/online-shopping/static/media/crown.ed28accb.svg",
+    "static/media/shopping-bag.30f07071.svg": "/online-shopping/static/media/shopping-bag.30f07071.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.e0c0aab1.js",
-    "static/js/2.f2dd77dc.chunk.js",
-    "static/css/main.14fb0229.chunk.css",
-    "static/js/main.c6ee7c60.chunk.js"
+    "static/js/2.cb7fb4d6.chunk.js",
+    "static/css/main.c3307726.chunk.css",
+    "static/js/main.67ec68bf.chunk.js"
   ]
 }
